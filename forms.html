@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+            font-style: italic;
+        }
+    </style>
 </head>
 <body>
     <form action="/submit.form" method="post">
@@ -16,22 +22,45 @@
         <input type="email" placeholder="Enter your email">
         <br>
         <textarea placeholder="Enter your note"></textarea>
+        <br>
         <select >
-            <option value="option 1">option1</option>
-            <option value="option 2">option 2</option>
+            <option value="option 1">west bengal</option>
+            <option value="option 2">bihar</option>
         </select>
-        <br>
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
-        <br>
-        <br>
-        <label for="username">Username</label>
-        <input type="text" id="username" aria_lable="Enter your username">
+        <br><br>
+
+        <label for="gender">male</label>
+        <input type="checkbox" id="gender" name="male">
+        <label for="gender">female</label>
+        <input type="checkbox" id="gender" name="male">
+        <label for="gender">others</label>
+        <input type="checkbox" id="gender" name="male">
         <br>
 
+        <label for="DOB">Date of Birth</label>
+        <input type="date" id="DOB">
+        <br>
+
+
+        <label for="age">age</label>
+        <input type="number" min="18" max="60" step="1" id="age" name="age">
+        
+        <br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">reset</button>
+        <br><br>
     </form>
 </body>
 </html>
 
-<fieldset></fieldset>
+<fieldset>
+    <form action="/submit.form" method="post">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username">
+        <br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+        <br>
+    </form>
+</fieldset>
 <optgroup></optgroup>
